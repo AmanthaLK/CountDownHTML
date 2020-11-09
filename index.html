@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!--- basic page needs
+   	================================================== -->
+   	<meta charset="utf-8">
+	<title>Amantha Amarasena</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   	<!-- mobile specific metas
+   	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   	================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+
+   	<!-- script
+   	================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   	<!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<style>
+		#cntdown {
+			text-align: center;
+			font-size: 55px;
+			margin-top: 0px;
+			color: #ffffff;
+		}
+	</style>
+
+</head>
+
+<body id="top">
+	<!-- header 
+   	================================================== -->
+	<header>
+   		<div class="row">
+   			<div class="logo">
+	        	<a href="index.html">Khronos</a>
+	      	</div> 
+
+			<div class="social-links">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/AmanthaOnline/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+					<li><a href="https://github.com/AmanthaOnline" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UCZR67I8XPP_dBagbsvq4hPg?sub_confirmation=1" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+					<li><a href="https://twitter.com/AmanthaOnline" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href="https://www.facebook.com/AmanthaLive" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+					<li><a href="https://www.instagram.com/amanthaonline/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>				     			
+				</ul>
+			</div>
+   		</div> 
+
+   	</header> <!-- /header -->   
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="home-particles">
+
+   	<div class="shadow-overlay"></div>
+
+   	<div class="content-wrap-table">		   
+
+		   <div class="main-content-tablecell">
+
+		   	<div class="row">
+		   		<div class="col-twelve">
+
+		   			<div id="counter">
+						<b><p id="cntdown"></p></b> 
+		   			</div>
+					   <hr/>
+			  			<div class="bottom-text">
+			  				<h1>amantha.lk is coming soon!</h1>
+				  		<hr/>			  				
+			  			</div>			  						  			   			
+
+			   	</div> <!-- /twelve --> 
+
+		   	</div> <!-- /row -->  
+
+		   </div> <!-- /main-content --> 
+		   
+		</div> <!-- /content-wrap -->
+   
+   </section> <!-- /home -->
+
+   
+  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Nov 19, 2020 00:00:00").getTime();
+	
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+	
+	  // Get today's date and time
+	  var now = new Date().getTime();
+		
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+		
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+	  // Output the result in an element with id="demo"
+	  document.getElementById("cntdown").innerHTML = days + "d " + hours + "h "
+	  + minutes + "m " + seconds + "s ";
+		
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("cntdown").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>
+
+</body>
+
+</html>
